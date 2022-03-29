@@ -1,0 +1,63 @@
+@import "../App.css";
+
+.header {
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  position: fixed;
+  top:0;
+  left: 0;
+  /* z-index: 5; */
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  column-gap: 2.7rem; /* 열의 간격*/
+}
+
+.logo h5 {
+  font-size: 1.3rem;
+  color: var(--color--primary);
+}
+
+.nav__item a {
+ color: var(--color-font);
+ transition: var(--transition-time); 
+ text-decoration: none;
+ font-weight: 400;
+ cursor: pointer;
+}
+
+.nav__item a:hover{
+  color: var(--color--primary);
+}
+
+/* BUTTON */
+button.btn {
+  background-color: var(--color--primary);
+  color: var(--color-font);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: .9rem;
+  padding: 7px 25px;
+  transition: var(--transition-time);
+}
+button.btn:hover {
+  transform: scale(calc(1.1));
+  color: var(--color-font);
+}
+/* MEDIA */
+.mobile__menu {
+  display: none;
+}
+.mobile__menu i {
+  color: var(--color-font);
+  font-style: 1.3rem;
+  cursor: pointer;
+}
+/* .header__mobile {
+  background: var(--color-card);
+  box-shadow: 2px 2px 4px 2px var(--color--primary);
+} */
