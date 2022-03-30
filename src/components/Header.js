@@ -1,8 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
 import { Container } from "reactstrap";
 
 function Header() {
+	let last_scroll_position = 0;
+	let working = false;
+
+	const [changing, setChanging] = useState(false);
+	const [scrolling, setScrolling] = useState(false);
+
+	const scrollView = (scroll_position) => {
+		if (scroll_position >= 10) {
+			setChanging(true);
+			setScrolling(true);
+		} else {
+			setChanging(false);
+			setScrolling(false);
+		}
+	};
+	window.addEventListener("scroll", (e) => {
+		last_scroll_position = window.scrollY;
+
+		if (!working) {
+			window.requestAnimationFrame(() => {
+				scrollView(last_scroll_position);
+				working = false;
+			});
+			working = true;
+		}
+	});
+	const MouseMove = () => {
+		if (scrolling) return;
+		setChanging((current) => !current);
+	};
+
 	const navItems = [
 		{
 			display: "Home",
@@ -13,12 +44,8 @@ function Header() {
 			url: "#about",
 		},
 		{
-			display: "Services",
-			url: "#services",
-		},
-		{
-			display: "Portfolio",
-			url: "#portfolio",
+			display: "Projects",
+			url: "#projects",
 		},
 		{
 			display: "Contact",
@@ -27,7 +54,18 @@ function Header() {
 	];
 
 	return (
-		<header className="header">
+		<header
+			className="header"
+			onMouseOver={MouseMove}
+			onMouseOut={MouseMove}
+			style={
+				changing
+					? {
+							backgroundColor: "#16264e",
+					  }
+					: { backgroundColor: "transparent" }
+			}
+		>
 			<Container>
 				<div className="navigation d-flex align-items-center justify-content-between">
 					<div className="logo">
