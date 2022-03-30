@@ -24,10 +24,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: var(--color-bg);
   scroll-behavior: smooth;
 }
-
+#root {
+  background: var(--color-bg);
+}
 h1, h2, h3, h4, h5, h6 {
   color: #fff;
   font-family: var(--font-main);
