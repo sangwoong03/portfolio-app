@@ -1,10 +1,5 @@
 @import "../App.css";
 
-/* SECTION */
-.about {
-
-}
-
 /* BUTTON */
 .about__btns {
   background: var(--modal-bg);

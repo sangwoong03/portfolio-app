@@ -1,9 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import "./About.css";
 import { Container, Col, Row } from "reactstrap";
-import sangwoong_sub from "../image/sangwoong_profile.jpg";
+import Education from "./Education";
+import AboutMe from "./AboutMe";
+import Skills from "./Skills";
+import Experience from "./Experience";
 
 function About() {
+	const [abtFilter, setAbtFitler] = useState("");
+
+	const aboutFilter = (e) => {
+		setAbtFitler(e.target.outerText);
+	};
+
+	const aboutChanger = () => {
+		switch (abtFilter) {
+			case "About me":
+				return <AboutMe />;
+			case "Education":
+				return <Education />;
+			case "Skills":
+				return <Skills />;
+			case "Experiences":
+				return <Experience />;
+			default:
+				return <AboutMe />;
+		}
+	};
+
 	return (
 		<section className="about">
 			<Container>
@@ -14,47 +38,22 @@ function About() {
 
 					<Col lg="4" md="3">
 						<div className="about__btns d-flex flex-column align-items-center justify-content-center">
-							<button className="about__btn">About Me</button>
-							<button className="about__btn">Education</button>
-							<button className="about__btn">Experiences</button>
-							<button className="about__btn">Skills</button>
+							<button className="about__btn" onClick={aboutFilter}>
+								About Me
+							</button>
+							<button className="about__btn" onClick={aboutFilter}>
+								Education
+							</button>
+							<button className="about__btn" onClick={aboutFilter}>
+								Experiences
+							</button>
+							<button className="about__btn" onClick={aboutFilter}>
+								Skills
+							</button>
 						</div>
 					</Col>
-
 					<Col lg="8" md="9">
-						<div className="about__wrapper d-flex">
-							<div className="about__img">
-								<img src={sangwoong_sub} alt="aboutImage" />
-							</div>
-
-							<div className="about__content">
-								<h2> About me </h2>
-								<p>
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
-									sunt in cupiditate! Est cupiditate, molestias dignissimos
-									iusto impedit, ea sit ratione cum architecto amet facilis iste
-									vitae! Itaque, nemo vel.
-								</p>
-								<div className="social__links">
-									<h6 className="mb-3">Connect with me</h6>
-									<span>
-										<a href="#">
-											<i class="ri-github-line"></i>
-										</a>
-									</span>
-									<span>
-										<a href="#">
-											<i class="ri-instagram-line"></i>
-										</a>
-									</span>
-									<span>
-										<a href="#">
-											<i class="ri-linkedin-line"></i>
-										</a>
-									</span>
-								</div>
-							</div>
-						</div>
+						{aboutChanger()}
 					</Col>
 				</Row>
 			</Container>
