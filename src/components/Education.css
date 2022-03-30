@@ -1,0 +1,34 @@
+@import "../App.css";
+
+
+/* https://stackoverflow.com/questions/10666573/tables-border-radius-does-not-function-as-expected */
+.edu__table {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+}
+thead tr {
+  background: #7865FF;
+  color: var(--color-font);
+}
+
+tr {  
+  background: #16264e;
+}
+tr:nth-child(even) {
+  background: #0f1f47;
+}
+td {
+  font-size: .9rem;
+  color: var(--color-font);
+  font-weight: 500;
+  vertical-align: middle;
+}
