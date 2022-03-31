@@ -1,7 +1,7 @@
 @import "../App.css";
 
 .main__section {
-  padding-top: 150px;
+  padding-top: 250px;
 }
 
 /* BTN */
@@ -25,11 +25,14 @@
 
 /* TITLE */
 .main__title span {
-  color: var(--color--primary);
+  color: transparent;
+  background: linear-gradient(to right top, #fff, var(--color--primary));
+  background-clip: text;
 }
 
 .main__title {
   font-weight: 600;
+  padding-top: 50px;
 }
 
 /* CONTENT */

@@ -2,16 +2,16 @@ import React, { useRef, useEffect } from "react";
 import "./MainSection.css";
 import { init } from "ityped";
 import { Container, Row, Col } from "reactstrap";
-import sangwoong_main from "../image/sw_photo_1.jpg";
+import sangwoong_main from "../assets/sw_photo_1.jpg";
 
 function MainSection() {
 	const textRef = useRef();
 
 	useEffect(() => {
 		init(textRef.current, {
-			backDelay: 1500,
+			backDelay: 1700,
 			showCursor: true,
-			strings: ["Front-end Developer", "Back-end Developer"],
+			strings: ["Sangwoong", "Full Stack Developer"],
 		});
 	}, []);
 
@@ -21,8 +21,6 @@ function MainSection() {
 				<Row>
 					<Col lg="6" md="6">
 						<div className="main__content">
-							<p> WELCOME! </p>
-							<h5> Hi </h5>
 							<h2 className="main__title">
 								I'm <span ref={textRef}> </span>
 							</h2>
