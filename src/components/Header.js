@@ -2,6 +2,25 @@ import React, { useState } from "react";
 import "./Header.css";
 import { Container } from "reactstrap";
 
+const navItems = [
+	{
+		display: "Home",
+		url: ".header",
+	},
+	{
+		display: "About",
+		url: ".about",
+	},
+	{
+		display: "Projects",
+		url: ".project",
+	},
+	{
+		display: "Contact",
+		url: ".contact",
+	},
+];
+
 function Header() {
 	let last_scroll_position = 0;
 	let working = false;
@@ -29,29 +48,22 @@ function Header() {
 			working = true;
 		}
 	});
+
 	const MouseMove = () => {
 		if (scrolling) return;
 		setChanging((current) => !current);
 	};
 
-	const navItems = [
-		{
-			display: "Home",
-			url: "#home",
-		},
-		{
-			display: "About",
-			url: "#about",
-		},
-		{
-			display: "Projects",
-			url: "#projects",
-		},
-		{
-			display: "Contact",
-			url: "#contact",
-		},
-	];
+	const NavHandleClick = (e) => {
+		e.preventDefault();
+		const targetAttr = e.target.getAttribute("href");
+		const location = document.querySelector(targetAttr).offsetTop;
+
+		window.scroll({
+			left: 0,
+			top: location - 70,
+		});
+	};
 
 	return (
 		<header
@@ -61,7 +73,8 @@ function Header() {
 			style={
 				changing
 					? {
-							backgroundColor: "#16264e",
+							background: "#132247",
+							boxShadow: "2px 2px 4px -2px #7865FF",
 					  }
 					: { backgroundColor: "transparent" }
 			}
@@ -76,17 +89,19 @@ function Header() {
 						<ul className="nav__list">
 							{navItems.map((item, index) => (
 								<li className="nav__item" key={index}>
-									<a href={item.url}>{item.display}</a>
+									<a href={item.url} onClick={NavHandleClick}>
+										{item.display}
+									</a>
 								</li>
 							))}
 						</ul>
 					</div>
-					<div className="nav__right d-flex align-items-center gap-4">
+					{/* <div className="nav__right d-flex align-items-center gap-4">
 						<button className="btn"> Let's a Talk</button>
 						<span className="mobile__menu">
 							<i class="ri-menu-5-line"></i>
 						</span>
-					</div>
+					</div> */}
 				</div>
 			</Container>
 		</header>

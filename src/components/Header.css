@@ -7,7 +7,7 @@
   position: fixed;
   top:0;
   left: 0;
-  z-index: 5;
+  z-index: 55555;
 }
 
 .nav__list {
@@ -18,7 +18,10 @@
 
 .logo h5 {
   font-size: 1.3rem;
-  color: var(--color--primary);
+  font-weight: 600;
+  color: transparent;
+  background: linear-gradient(to right top, #fff, var(--color--primary));
+  background-clip: text;
 }
 
 .nav__item a {
@@ -57,7 +60,3 @@ button.btn:hover {
   font-style: 1.3rem;
   cursor: pointer;
 }
-/* .header__mobile {
-  background: var(--color-card);
-  box-shadow: 2px 2px 4px 2px var(--color--primary);
-} */
