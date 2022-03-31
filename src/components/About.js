@@ -33,7 +33,7 @@ function About() {
 			<Container>
 				<Row>
 					<Col lg="12" className="mb-5">
-						<h2>About Me</h2>
+						<h2 className="about__title">About</h2>
 					</Col>
 
 					<Col lg="4" md="3">

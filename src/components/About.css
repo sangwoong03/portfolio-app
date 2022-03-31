@@ -1,5 +1,16 @@
 @import "../App.css";
 
+.about {
+  padding-top: 250px;
+}
+.about__title {
+  font-weight: 600;
+  color:transparent;
+  background: linear-gradient(to right top, #fff, var(--color--primary));
+  background-clip: text;
+}
+
+
 /* BUTTON */
 .about__btns {
   background: var(--modal-bg);
@@ -45,7 +56,6 @@
 }
 .about__img img {
   width: 70%;
-  height: 85%;
   border-radius: 10px;
 }
 .about__content {
