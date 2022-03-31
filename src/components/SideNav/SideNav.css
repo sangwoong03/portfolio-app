@@ -1,0 +1,40 @@
+@import "../../App.css";
+
+.sidenav__wrapper {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+
+}
+
+.sidenav__wrapper span {
+  margin: 20px 10px;
+  font-size: 1.5rem;
+  transform: translateX(100px);
+  transition: var(--transition-time);
+}
+.sidenav__wrapper span:hover {
+  transform: none;
+  border-bottom: 1px solid var(--color--primary);
+  border-radius: 5px;
+  background: rgba(120, 101, 255, .1);
+}
+.sidenav__wrapper span a {
+  text-decoration: none;
+  color: transparent;
+  background: linear-gradient(to right bottom, #fff, var(--color--primary));
+  background-clip: text;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+}
+.sidenav__wrapper span a i {
+  margin-right: 30px;
+}
+.sidenav__wrapper span a p {
+  margin: 0;
+}
