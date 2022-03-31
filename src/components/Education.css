@@ -16,7 +16,7 @@ th, td {
   font-size: 1rem;
 }
 thead tr {
-  background: #7865FF;
+  background: rgba(120, 101, 255, .8);
   color: var(--color-font);
 }
 
@@ -24,10 +24,13 @@ tr {
   background: #16264e;
 }
 tr:nth-child(even) {
-  background: #0f1f47;
+  /* background: #0f1f47; */
+  
+  border-top: 1px solid #0b183a;
+  border-bottom: 1px solid #0b183a;
 }
 td {
-  font-size: .9rem;
+  font-size: .8rem;
   color: var(--color-font);
   font-weight: 500;
   vertical-align: middle;
