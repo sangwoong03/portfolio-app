@@ -4,7 +4,7 @@ import "./Skills.css";
 function Skills() {
 	const feSkills = [
 		{
-			title: "html5 & css3",
+			title: "Html5 & Css3",
 			percentage: "85%",
 		},
 		{
@@ -24,19 +24,36 @@ function Skills() {
 		},
 		{
 			title: "Django",
-			percentage: "50%",
+			percentage: "10%",
 		},
 		{
 			title: "Flask",
-			percentage: "20%",
+			percentage: "10%",
 		},
 	];
 
-	const SkillItem = ({ title, percentage }) => {
+	const idSkills = [
+		{
+			title: "Leadership",
+			percentage: "90%",
+		},
+		{
+			title: "English",
+			percentage: "80%",
+		},
+		{
+			title: "MS Office",
+			percentage: "80%",
+		},
+	];
+
+	const SkillItem = ({ title, percentage, level }) => {
 		return (
 			<div className="skill__data">
 				<div className="skill__title">
-					<h6>{title}</h6>
+					<h6>
+						{title} {level}
+					</h6>
 					<span>{percentage}</span>
 				</div>
 				<div className="skill__bar">
@@ -66,6 +83,16 @@ function Skills() {
 						key={index}
 						title={item.title}
 						percentage={item.percentage}
+					/>
+				))}
+			</div>
+			<div className="back-end__skill w-50">
+				{idSkills.map((item, index) => (
+					<SkillItem
+						key={index}
+						title={item.title}
+						percentage={item.percentage}
+						level={item.level}
 					/>
 				))}
 			</div>

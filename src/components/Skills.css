@@ -6,6 +6,11 @@
 }
 .skill__data {
   margin-bottom: 20px;
+  padding: 5px;
+}
+.skill__data:hover {
+  background: rgba(0,0 ,0,.4);
+  border-radius: 4px;
 }
 .skill__title {
   display: flex;
@@ -15,6 +20,7 @@
 }
 .skill__title h6 {
   margin-bottom: 0;
+  font-weight: 500;
 }
 .skill__title span {
   color: #fff;
