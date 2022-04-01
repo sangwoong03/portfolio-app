@@ -6,7 +6,7 @@
   --font-main: "Lato", sans-serif;
   --font-sub: "Rubik", sans-serif;
   
-  --color--primary: #7865FF;
+  --color--primary: #7865ff;
   --color-font: #FFF;
   --color-bg: #0E1B31;
   --color-card: #132247;
@@ -26,6 +26,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
 #root {
   background: var(--color-bg);
 }
@@ -60,5 +61,18 @@ a {
 }
 
 section, footer {
-  padding: 60px 0;
+  padding: 150px 0;
+}
+
+
+/* CUSTOM SCROLL BAR */
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: var(--scroll-bar-color);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2em;
+  background: var(--scroll-bar-thumb-color);
 }
