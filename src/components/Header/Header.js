@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import "./Header.css";
 import { Container } from "reactstrap";
 
@@ -27,6 +27,7 @@ function Header() {
 
 	const [changing, setChanging] = useState(false);
 	const [scrolling, setScrolling] = useState(false);
+	const menuRef = useRef(null);
 
 	const scrollView = (scroll_position) => {
 		if (scroll_position >= 10) {
@@ -65,6 +66,10 @@ function Header() {
 		});
 	};
 
+	const menuToggle = () => {
+		menuRef.current.classList.toggle("menu__active");
+	};
+
 	return (
 		<header
 			className="header"
@@ -80,12 +85,12 @@ function Header() {
 			}
 		>
 			<Container>
-				<div className="navigation d-flex align-items-center justify-content-between">
+				<div className="navigation d-flex justify-content-between align-items-center">
 					<div className="logo">
 						<h5>SangWoong</h5>
 					</div>
 
-					<div className="nav__menu">
+					<div className="nav__menu" ref={menuRef} onClick={menuToggle}>
 						<ul className="nav__list">
 							{navItems.map((item, index) => (
 								<li className="nav__item" key={index}>
@@ -97,9 +102,9 @@ function Header() {
 						</ul>
 					</div>
 					<div className="nav__right d-flex align-items-center gap-4">
-						<button className="btn"> Let's a Talk</button>
+						<button className="btn"> Resume </button>
 						<span className="mobile__menu">
-							<i class="ri-menu-5-line"></i>
+							<i class="ri-menu-5-line" onClick={menuToggle}></i>
 						</span>
 					</div>
 				</div>
