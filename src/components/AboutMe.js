@@ -1,12 +1,13 @@
 import React from "react";
 import "./About.css";
-import sangwoong_sub from "../assets/sangwoong_profile.jpg";
 
 function AboutMe() {
+	const swImgSub = "../assets/sangwoong_profile.jpg";
+
 	return (
 		<div className="about__wrapper d-flex">
 			<div className="about__img">
-				<img src={sangwoong_sub} alt="aboutImage" />
+				<img src={swImgSub} alt="aboutImage" />
 			</div>
 
 			<div className="about__content">
