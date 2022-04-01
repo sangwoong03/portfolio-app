@@ -96,12 +96,12 @@ function Header() {
 							))}
 						</ul>
 					</div>
-					{/* <div className="nav__right d-flex align-items-center gap-4">
+					<div className="nav__right d-flex align-items-center gap-4">
 						<button className="btn"> Let's a Talk</button>
 						<span className="mobile__menu">
 							<i class="ri-menu-5-line"></i>
 						</span>
-					</div> */}
+					</div>
 				</div>
 			</Container>
 		</header>
