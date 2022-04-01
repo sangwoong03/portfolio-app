@@ -1,6 +1,7 @@
 import React from "react";
 import "./Contact.css";
 import { Container, Row, Col } from "reactstrap";
+import Form from "../Form/Form";
 
 function Contact() {
 	return (
@@ -29,14 +30,15 @@ function Contact() {
 							<div className="contact__info-box w-50">
 								<h6> Email</h6>
 								<p> sangwoong03@gmail.com </p>
-								<p> can7063@daum.net (sub) </p>
 							</div>
 							<div className="contact__info-box w-50">
-								<h6> Address </h6>
-								<p>Osan-no 77 (105-101), Osan-si,</p>
-								<p>Gyunggi-do, Republic of Korea</p>
+								<h6> Blog </h6>
+								<p> setting... </p>
 							</div>
 						</div>
+					</Col>
+					<Col>
+						<Form />
 					</Col>
 				</Row>
 			</Container>
