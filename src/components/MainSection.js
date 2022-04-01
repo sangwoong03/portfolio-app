@@ -2,9 +2,10 @@ import React, { useRef, useEffect } from "react";
 import "./MainSection.css";
 import { init } from "ityped";
 import { Container, Row, Col } from "reactstrap";
-import sangwoong_main from "../assets/sw_photo_1.jpg";
 
 function MainSection() {
+	const swImgMain = "../assets/sw_photo_1.jpg";
+
 	const textRef = useRef();
 
 	useEffect(() => {
@@ -41,7 +42,7 @@ function MainSection() {
 
 					<Col>
 						<div className="main__img">
-							<img src={sangwoong_main} alt="myImage" />
+							<img src={swImgMain} alt="myImage" />
 						</div>
 					</Col>
 				</Row>
