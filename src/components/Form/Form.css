@@ -1,0 +1,55 @@
+@import "../../App.css";
+
+.form__wrapper {
+  background: var(--color-card);
+  border-radius: 10px;
+  padding: 1.5rem 3rem;
+  color: var(--color-font);
+  display: flex;
+  flex-direction: column;
+}
+
+.form__input {
+  margin-bottom: 15px;
+}
+
+.form__input label {
+  margin-right: 15px;
+  width: 20%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.form__input input,
+.form__input textarea {
+  background: #c1ceff;
+  border-radius: 5px;
+  border:none;
+  outline: none;
+  width: 70%;
+}
+
+.text label {
+  height: 20px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  padding-left: 10px;
+}
+
+.submit__btn {
+  border: none;
+  outline: none;
+  background: var(--color--primary);
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: var(--color-font);
+  font-weight: 600;
+  width: 20%;
+  margin: auto 0 0 auto ;
+}
+.submit__btn:hover {
+  background: rgba(120, 101, 255, .8)
+}
