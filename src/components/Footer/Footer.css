@@ -1,0 +1,27 @@
+@import "../../App.css";
+
+footer {
+  padding-top: 0;
+  padding-bottom: 60px;
+}
+.footer__wrapper {
+  border-top: 1px solid rgba(120, 101, 255, .3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  color: transparent;
+  background: linear-gradient(to right top, #fff, var(--color--primary));
+  background-clip: text;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 992px) {
+  footer p {
+    font-size: 1rem;
+  }
+}
