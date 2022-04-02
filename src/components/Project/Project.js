@@ -44,7 +44,7 @@ function Projects() {
 		<section className="project">
 			<Container>
 				<Row>
-					<Col lg="12" className="project__header mb-5">
+					<Col lg="12" className="project__title mb-5">
 						<h2> Projects </h2>
 						<p>
 							There are various projects in
