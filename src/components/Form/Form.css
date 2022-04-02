@@ -4,7 +4,7 @@
   background: var(--color-card);
   border-radius: 10px;
   padding: 1.5rem 3rem;
-  color: var(--color-font);
+  color: #c1ceff;
   display: flex;
   flex-direction: column;
 }
@@ -42,14 +42,55 @@ textarea::placeholder {
 .submit__btn {
   border: none;
   outline: none;
+  text-align: center;
   background: var(--color--primary);
   border-radius: 5px;
   padding: 5px 10px;
   color: var(--color-font);
   font-weight: 600;
   width: 20%;
-  margin: auto 0 0 auto ;
+  margin: auto 2.2rem 0 auto ;
 }
 .submit__btn:hover {
   background: rgba(120, 101, 255, .8)
+}
+
+/* MEDIA */
+@media screen and (max-width: 1200px) {
+  .form__input label {
+    font-size: .8rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  form{
+    height: 100%;
+    color: #ffffff;
+  }
+  .form__input {
+    margin-bottom: 30px;
+  }
+  .form__input label,
+  .text label {
+    display: none;
+  }
+  .form__input input,
+  .form__input textarea {
+    width: 100%;
+    background: var(--color-card);
+    border-bottom: 2px solid rgba(193, 206, 255, .1);
+  }
+  input::placeholder,
+  textarea::placeholder {
+    font-size: .9rem;
+  }
+  .form__input textarea {
+    border-top: 2px solid rgba(193, 206, 255, .1);
+  }
+  .submit__btn {
+    font-size: .9rem;
+    font-weight: 400;
+    width: 30%;
+    margin: auto 0 0 auto ;
+  }
 }
