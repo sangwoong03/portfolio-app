@@ -7,7 +7,6 @@
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
-
 }
 
 .sidenav__wrapper span {
@@ -37,4 +36,10 @@
 }
 .sidenav__wrapper span a p {
   margin: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .sidenav__wrapper {
+    display: none;
+  }
 }
