@@ -1,4 +1,4 @@
-@import "../App.css";
+@import "../../App.css";
 
 .about {
   padding-top: 250px;
@@ -50,12 +50,11 @@
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
-  border-radius: 10px 0 0 10px;
+  border-radius: 10px;
 }
 .about__img img {
-  width: 70%;
+  width: 100%;
   border-radius: 10px;
 }
 .about__content {
@@ -80,4 +79,26 @@
 }
 .social__links span a i {
   color: var(--color--primary);
+}
+
+/* MEDIA */
+@media screen and (max-width: 992px) {
+  .about {
+    padding-top: 100px;
+  }
+  .about__btn {
+    padding: 15px 25px;
+    font-size: .8rem;
+  }
+  .about__btns {
+    margin-bottom: 40px;
+  }
+  .about__content h2 {
+    font-size: 1.5rem;
+  }
+  .about__content p {
+    font-size: .8rem;
+    line-height: 30px;
+  }
+  
 }
