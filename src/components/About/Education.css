@@ -1,4 +1,4 @@
-@import "../App.css";
+@import "../../App.css";
 
 
 /* https://stackoverflow.com/questions/10666573/tables-border-radius-does-not-function-as-expected */
@@ -15,6 +15,7 @@ th, td {
   padding: 0.8rem 1rem;
   font-size: 1rem;
 }
+
 thead tr {
   background: rgba(120, 101, 255, .8);
   color: var(--color-font);
@@ -34,4 +35,13 @@ td {
   color: var(--color-font);
   font-weight: 500;
   vertical-align: middle;
+}
+
+
+/* MEDIA */
+@media screen and (max-width: 992px) {
+  th, td {
+    font-size: .7rem;
+    padding: 0.8rem;
+  }
 }
