@@ -5,19 +5,19 @@ const ExData = [
 	{
 		year: "2019. 03 - 2021. 06",
 		title: "Leader",
-		desc: "I have to fill this fomr about my experiences when I did in Korean	Amry. uhmm about 100-120 words maybe.",
+		desc: "I have to fill this form about my experiences when I did in Korean	Army. uhmm about 100-120 words maybe.",
 		img: "../assets/ex_1.jpg", // Public 폴더에 assets 폴더 생성해야 태그 상대경로 사용 가능
 	},
 	{
 		year: "2021. 10 - 2022. 05",
 		title: "Traveler",
-		desc: "I have to fill this fomr about my experiences when I did in Korean	Amry. uhmm about 100-120 words maybe.",
+		desc: "I have to fill this form about my experiences when I did in Korean	Army. uhmm about 100-120 words maybe.",
 		img: "../assets/ex_2.jpg",
 	},
 	{
 		year: "2022. 05 - 2022. 08",
 		title: "Developer",
-		desc: "I have to fill this fomr about my experiences when I did in Korean	Amry. uhmm about 100-120 words maybe.",
+		desc: "I have to fill this form about my experiences when I did in Korean	Army. uhmm about 100-120 words maybe.",
 		img: "../image/ex_3.jpg",
 	},
 ];
