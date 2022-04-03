@@ -78,7 +78,7 @@ function Header() {
 			style={
 				changing
 					? {
-							background: "#132247",
+							backgroundColor: "#132247",
 							boxShadow: "2px 2px 4px -2px #7865FF",
 					  }
 					: { backgroundColor: "transparent" }
