@@ -1,6 +1,6 @@
 @import "../../App.css";
 
-header.header {
+.header {
   width: 100%;
   height: 70px !important;
   line-height: 70px;

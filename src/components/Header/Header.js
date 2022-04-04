@@ -80,8 +80,24 @@ function Header() {
 					? {
 							backgroundColor: "#132247",
 							boxShadow: "2px 2px 4px -2px #7865FF",
+							width: "100%",
+							height: "70px",
+							lineHeight: "70px",
+							position: "fixed",
+							top: "0",
+							left: "0",
+							zIndex: "5555",
 					  }
-					: { backgroundColor: "transparent" }
+					: {
+							backgroundColor: "transparent",
+							width: "100%",
+							height: "70px",
+							lineHeight: "70px",
+							position: "fixed",
+							top: "0",
+							left: "0",
+							zIndex: "5555",
+					  }
 			}
 		>
 			<Container>
