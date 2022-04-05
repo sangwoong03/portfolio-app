@@ -3,6 +3,7 @@
   background: #132347;
   padding: 20px;
   border-radius: 10px;
+  gap: 3rem;
 }
 .skill__data {
   margin-bottom: 20px;
@@ -45,10 +46,22 @@
 
 /* MEDIA */
 @media screen and (max-width: 992px) {
+  .skills__wrapper {
+    height: 100%;
+    background: #132347;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 1rem;
+  }
   .skill__title h6 {
     font-size: .8rem;
   }
   .skill__title span {
     font-size: .7rem;
+  }
+}
+@media screen and (max-width: 421px) {
+  .skill__title span{
+    display: none;
   }
 }

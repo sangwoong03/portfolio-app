@@ -51,9 +51,7 @@ function Skills() {
 		return (
 			<div className="skill__data">
 				<div className="skill__title">
-					<h6>
-						{title} {level}
-					</h6>
+					<h6>{title}</h6>
 					<span>{percentage}</span>
 				</div>
 				<div className="skill__bar">
@@ -67,7 +65,7 @@ function Skills() {
 	};
 
 	return (
-		<div className="skills__wrapper d-flex gap-5 align-items-center">
+		<div className="skills__wrapper d-flex align-items-center">
 			<div className="front-end__skill w-50">
 				{feSkills.map((item, index) => (
 					<SkillItem
