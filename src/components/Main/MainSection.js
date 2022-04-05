@@ -10,9 +10,9 @@ function MainSection() {
 
 	useEffect(() => {
 		init(textRef.current, {
-			backDelay: 1700,
+			backDelay: 1500,
 			showCursor: true,
-			strings: ["Sangwoong", "Full Stack Developer"],
+			strings: ["Sangwoong", "Studying for Full-Stack Developer"],
 		});
 	}, []);
 
@@ -23,13 +23,19 @@ function MainSection() {
 					<Col lg="6" md="6">
 						<div className="main__content">
 							<h2 className="main__title">
-								I'm <span ref={textRef}> </span>
+								<span ref={textRef}> </span>
 							</h2>
 							<p className="summary">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
-								accusamus quasi iure alias nam, pariatur molestiae autem aut
-								magni non, dolores illum voluptates voluptate adipisci
-								praesentium illo! Beatae, quam cum?
+								The question <strong>"Why?"</strong> is so important for us, in
+								our life. <br />
+								While being as a leader in various types of team including Army,
+								<br />
+								I found the importance of Q("Why?") to all circumstance and
+								things. <br />
+								Even if I can get enough informations of programming over the
+								internet,
+								<br />I want to be a developer who know{" "}
+								<strong>"Why" and "How"</strong> I write source codes.
 							</p>
 							<div className="main__btns d-flex align-items-center gap-4">
 								<button className="btn hire__btn">

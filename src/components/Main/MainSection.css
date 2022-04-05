@@ -67,7 +67,7 @@
 /* MEDIA */
 @media screen and (max-width: 992px) {
   .main__section {
-    padding-top: 150px;
+    padding-top: 100px;
   }
 
   .main__content .summary {
