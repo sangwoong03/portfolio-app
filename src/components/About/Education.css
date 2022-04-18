@@ -42,6 +42,19 @@ td {
 @media screen and (max-width: 992px) {
   th, td {
     font-size: .7rem;
-    padding: 0.8rem;
+    padding: .8rem;
+  }
+}
+@media screen and (max-width: 501px) {
+  th, td {
+    padding: .6rem .2rem;
+  }
+  th:first-child,
+  td:first-child {
+    width: 20%;
+  }
+  th:nth-child(2),
+  td:nth-child(2) {
+    width: 30%;
   }
 }
