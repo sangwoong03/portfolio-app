@@ -88,7 +88,7 @@ textarea::placeholder {
     border-top: 2px solid rgba(193, 206, 255, .1);
   }
   .submit__btn {
-    font-size: .9rem;
+    font-size: .7rem;
     font-weight: 400;
     width: 30%;
     margin: auto 0 0 auto ;
