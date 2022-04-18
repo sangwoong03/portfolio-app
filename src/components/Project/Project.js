@@ -18,7 +18,7 @@ const projectData = [
 		mainurl: "",
 	},
 	{
-		title: "Algorithm Solutions",
+		title: "Data Structure & Algorithm",
 		icon: "ri-shape-line",
 		desc: "I have to fill this form and both urls. The First project that I made is this web-site of the Siban Company. This site consists of html and css mainly with a bit of javascript code.",
 		giturl: "",
