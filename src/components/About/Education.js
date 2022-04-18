@@ -6,25 +6,25 @@ function Education() {
 		{
 			institute: "SEMA Highschool",
 			major: "-",
-			terms: "2012. 03 ~ 2015. 02",
+			terms: "2012-03 ~ 2015-02",
 			grade: "Graduated",
 		},
 		{
 			institute: "AJOU University",
-			major: "English Lang. and Lit.",
-			terms: "2015. 03 ~ 2019. 02",
+			major: "English Language and Literature",
+			terms: "2015-03 ~ 2019-02",
 			grade: "3.7 / 4.5 ",
 		},
 		{
 			institute: "Zerobase",
 			major: "Front-end Programming",
-			terms: "2021. 11 ~ 2022. 01",
+			terms: "2021-11 ~ 2022-01",
 			grade: "Passed",
 		},
 		{
 			institute: "Wecode Bootcamp",
 			major: "Front-end Programming",
-			terms: "2022. 05 ~ ",
+			terms: "2022-05 ~ ",
 			grade: "not yet",
 		},
 	];
