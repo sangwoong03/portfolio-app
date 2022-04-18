@@ -5,7 +5,7 @@ function AboutMe() {
 	const swImgSub = "../assets/sangwoong_profile.jpg";
 
 	return (
-		<div className="about__wrapper d-flex">
+		<div className="about__wrapper">
 			<div className="about__img">
 				<img src={swImgSub} alt="aboutImage" />
 			</div>
