@@ -51,6 +51,7 @@
 /* MEDIA */
 @media screen and (max-width: 992px) {
   .contact {
+    padding-top: 50px;
     padding-bottom: 150px;
   }
   .contact__info-container {
@@ -70,10 +71,18 @@
 
 @media screen and (max-width: 767px) {
   .contact__info-container {
-    display: flex;
     flex-direction: row;
   }
   .contact__info-box {
     width: 50%;
+  }
+}
+@media screen and (max-width: 415px) {
+  .contact__info-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact__info-box {
+    width: 100%;
   }
 }
