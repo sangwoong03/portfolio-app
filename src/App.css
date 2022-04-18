@@ -17,6 +17,8 @@
   --scroll-bar-thumb-color: #282f4e;
 
   --transition-time: 0.3s ease;
+
+  --color--primary--sub : #7765ff69;
 }
 
 /* COMMON STYLE */
@@ -66,7 +68,6 @@ section, footer {
 
 
 /* CUSTOM SCROLL BAR */
-
 ::-webkit-scrollbar {
   width: 10px;
   background: var(--scroll-bar-color);
@@ -76,3 +77,11 @@ section, footer {
   border-radius: 2em;
   background: var(--scroll-bar-thumb-color);
 }
+
+/* Media */
+@media screen and (max-width: 992px) {
+  section, footer {
+    padding: 100px 0;
+  }
+};
+  
