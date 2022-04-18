@@ -48,10 +48,10 @@
 /* MEDIA */
 @media screen and (max-width: 992px ) {
   .project {
-    padding-top: 150px;
+    padding-top: 100px;
   }
   .project__wrap h2 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 10px;
   }
   .project__wrap p {
